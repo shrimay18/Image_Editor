@@ -65,6 +65,20 @@ public class ImageEditor{
     }   
 } return outputImage ;
      } 
+     public static BufferedImage rotateAntiClockwiseImage(BufferedImage inputImage){
+        int height = inputImage.getHeight();
+        int width = inputImage.getWidth();
+        BufferedImage outputImage = new BufferedImage(height, width, BufferedImage.TYPE_3BYTE_BGR);
+        for(int i=0;i<height;i++){
+            for(int j =0;j<width;j++){
+                outputImage.setRGB(i ,width-j-1,inputImage.getRGB(j, i));
+            }
+        }return outputImage;}
+
+
+
+
+
      public static BufferedImage croppedImage(BufferedImage inputImage){
         int height = inputImage.getHeight();
         int width = inputImage.getWidth();
@@ -111,6 +125,8 @@ public class ImageEditor{
         } return outputImage ;
 
      }
+    
+
 
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
@@ -118,7 +134,8 @@ public class ImageEditor{
         File inputFile = new File( "image.jpg");
         try {
             BufferedImage inputImage = ImageIO.read(inputFile);   //image IO se read and store it as image  & BUFFERED image se we are using this as  image form ;
-          
+
+         while(true){  
         int ch;
         System.out.println("Enter 1 for printing pixel values");
         System.out.println("Enter 2 for GrayScale image");
@@ -128,11 +145,18 @@ public class ImageEditor{
         System.out.println("Enter 6 for inverted image");
         System.out.println("Enter 7 for horizontal inverted image");
         System.out.println("Enter 8 for cropped image");
+        System.out.println("Enter 9 for anticlockwise rotated  image");
         
 
         System.out.println("Enter your choice");
             ch=sc.nextInt();
+            if (ch == 0){
+                break;
+            }
             switch(ch){
+                
+            
+
                 case 1:
                 printPixelValues(inputImage); 
                 break;
@@ -185,6 +209,11 @@ public class ImageEditor{
         System.out.print("here is your cropped image");
 
             break;
+            case 9:
+            BufferedImage rotateAntiClockwisedImage = rotateAntiClockwiseImage(inputImage);
+        File rotateAntiClockwiseImage = new File("rotateAntiClockwisedImage.jpg");
+        ImageIO.write(rotateAntiClockwisedImage,"jpg",rotateAntiClockwiseImage);
+        System.out.print("here is your rotateAntiClockwised image");
             
             default:
             System.out.print("Enter valid choice");
@@ -193,10 +222,11 @@ public class ImageEditor{
             }
 
            
-        }  catch (IOException e) {
+        } } catch (IOException e) {
             // TODO Auto-generated catch blocks
             e.printStackTrace();
         }    //to read file & store it
             
-       }
+       
     }
+}
