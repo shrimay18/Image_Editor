@@ -11,16 +11,23 @@ The initial image is :-
   ![Image Editor Screenshot](graScaleImage.jpg)
 
 - *Rotate:* Rotate images 90 degrees clockwise.
-  ![Image Editor Screenshot](rotatedImage.jpg)
+  ![Image Editor Screenshot](transposeImage.jpg)
 
 - *Horizontal Invert:* Flip images horizontally.
-  ![Image Editor Screenshot](HorizontallyrotatedImage.jpg)
+  ![Image Editor Screenshot](horizontalinvertImage.jpg)
 
 - *Vertical Invert:* Flip images vertically.
-  ![Image Editor Screenshot](VerticallyrotatedImage.jpg)
+  ![Image Editor Screenshot](invertImage.jpg)
 
 - *Adjust Brightness:* Increase or decrease image brightness.
-  ![Image Editor Screenshot](changebright.jpg)
+  ![Image Editor Screenshot](changedBrightnessImage.jpg)
+
+  *Crop Image:* crops the image .
+  ![Image Editor Screenshot](cropImage.jpg)
+
+  *Quatered Image:* reduces the size of image to quater of the original.
+  ![Image Editor Screenshot](quateredImage.jpg)
+
 
 ## Getting Started
 
