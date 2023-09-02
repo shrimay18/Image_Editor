@@ -49,7 +49,7 @@ Follow these steps to get started with the Java Image Editor:
   - java.nio.Buffer;
   - java.util.Scanner;
 ### All the Functions Explanations:-
-1) GrayScaling : here i first enter the height and width of the image .THen i used the nested for loop where i printed the pixel values of the image. Then i stored the pixel values in the buffered image and thne used the inbuilt function of TYPE_BYTE_GRAY to convert to gray scale and got the final output editing .
+1) GrayScaling : here i first enter the height and width of the image .THen i used the nested for loop where i printed the pixel values of the image. Then i stored the pixel values in the buffered image and thne used the inbuilt function of TYPE_BYTE_GRAY to convert to gray scale and got the final output edited image .
    
 2)  invertedImage : Here I first get the height and width of the image which i need to edit. Then I created a new bufferred Image in which I append the new changes. Then I used a nested for loop for getting the particular pixel values of the image, then i set the values according to the need in the new bufferred image. This runs and successfully creates a result image in the current working directory with name VerticallyrotatedImage.jpg.
    
@@ -61,7 +61,9 @@ Follow these steps to get started with the Java Image Editor:
 
 6) horizontalInvertedImage : Here I First get the height and width of the image which i need to edit. Then I created a new bufferred Image in which I append the new changes. Then I used a nested for loop for getting the particular pixel values of the image, then i set the values according to the need in the new bufferred image. This runs and successfully creates a result image in the current working directory with name horizontalInvertedImage.jpg.
 
-7)croppedImage :Here i first get the height and width of the image which i need to edit.Then i created a new buffered image in which i append the changes .Then I used a nested for loop for getting the particular pixel values of the image , then i iterated the outer loop till height by 2 and the inner loop till width by 2 to crop the given image . This image got stored in the buffered image created and the code runs succesfully and create a working directory with new name cropImage.jpg .
+7)croppedImage :Here i first get the height and width of the image which i need to edit.Then i created a new buffered image in which i append the changes .Then I used a nested for loop for getting the particular pixel values of the image , then i iterated the ou.ter loop till height by 2 and the inner loop till width by 2 to crop the given image . This image got stored in the buffered image created and the code runs succesfully and create a working directory with new name cropImage.jpg .
+
+8)quateredImage : Here i first get the height and width of the image which i need to edit.Then i created a new buffered image in whch i append the changes .Then i used a nested for loop for getting the particular pixel values.Then some modifications were made in the loop required to give a quater image . Now the image got stored in the buffer image and the code runs succesfully and create a working directory with new name quaterImage.jpg .
 
 
 ### Usage
@@ -74,7 +76,7 @@ Follow these steps to get started with the Java Image Editor:
 - Horizontal Invert: Flips the image horizontally and saves it.
 - Vertical Invert: Flips the image vertically and saves it.
 - Adjust Brightness: Adjusts the image brightness and saves it.
-- Exit: Quits the image editor.
+  
 - Follow the on-screen instructions to perform the desired operation on your image.
 - After selecting the option the result image would be saved in the current working directory.
 
