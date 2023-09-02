@@ -51,7 +51,7 @@ Follow these steps to get started with the Java Image Editor:
 ### All the Functions Explanations:-
 1) GrayScaling : here i first enter the height and width of the image .THen i used the nested for loop where i printed the pixel values of the image. Then i stored the pixel values in the buffered image and thne used the inbuilt function of TYPE_BYTE_GRAY to convert to gray scale and got the final output editing .
    
-2)  invertedImage : Here I First get the height and width of the image which i need to edit. Then I created a new bufferred Image in which I append the new changes. Then I used a nested for loop for getting the particular pixel values of the image, then i set the values according to the need in the new bufferred image. This runs and successfully creates a result image in the current working directory with name VerticallyrotatedImage.jpg.
+2)  invertedImage : Here I first get the height and width of the image which i need to edit. Then I created a new bufferred Image in which I append the new changes. Then I used a nested for loop for getting the particular pixel values of the image, then i set the values according to the need in the new bufferred image. This runs and successfully creates a result image in the current working directory with name VerticallyrotatedImage.jpg.
    
 3) transposeImage : Here I First get the height and width of the image which i need to edit. Then I created a new bufferred Image in which I append the new changes. Then I used a nested for loop for getting the particular pixel values of the image, then I set the all the pixel values and set the columns and rows values in the new bufferred image and gave it the pixel values of the image rows and columns. This runs and successfully creates a result image in the current working directory with name transposedImage.jpg.
 
@@ -77,5 +77,7 @@ Follow these steps to get started with the Java Image Editor:
 - Exit: Quits the image editor.
 - Follow the on-screen instructions to perform the desired operation on your image.
 - After selecting the option the result image would be saved in the current working directory.
+
+
   
 
