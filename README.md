@@ -25,7 +25,8 @@ The initial image is :-
   *Crop Image:* crops the image .
   ![Image Editor Screenshot](cropImage.jpg)
 
-  *Quatered Image:* reduces the size of image to quater of the original.
+  *Quatered Image:*
+   reduces the size of image to quater of the original.
   
   ![Image Editor Screenshot](quateredImage.jpg)
 
