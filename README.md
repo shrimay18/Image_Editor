@@ -26,6 +26,7 @@ The initial image is :-
   ![Image Editor Screenshot](cropImage.jpg)
 
   *Quatered Image:* reduces the size of image to quater of the original.
+  
   ![Image Editor Screenshot](quateredImage.jpg)
 
 
@@ -76,25 +77,4 @@ Follow these steps to get started with the Java Image Editor:
 - Follow the on-screen instructions to perform the desired operation on your image.
 - After selecting the option the result image would be saved in the current working directory.
   
-
-### Examples
-
-// Load an image
-
-BufferedImage inputImage = ImageIO.read(new File("input.jpg"));
-
-// Convert the image to grayscale
-
-BufferedImage grayScaleImage = ImageEditor.convertToGrayScale(inputImage);
-ImageIO.write(grayScaleImage, "jpg", new File("grayscale.jpg"));
-
-// Rotate the image 90 degrees clockwise
-
-BufferedImage rotatedImage = ImageEditor.rotateClockwise(inputImage);
-ImageIO.write(rotatedImage, "jpg", new File("rotated.jpg"));
-
-// Adjust the brightness of the image by 20%
-
-BufferedImage brightenedImage = ImageEditor.changeBrightness(inputImage, 20);
-ImageIO.write(brightenedImage, "jpg", new File("brightened.jpg"))
 
