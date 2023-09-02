@@ -1,5 +1,5 @@
 # Image_Editor
-Java Image EditMagic is a simple image editing tool that allows you to perform various operations on images, such as converting to grayscale, rotating, inverting, adjusting brightness, and more.
+Java Image Editor is a simple image editing tool that allows you to perform various operations on images, such as converting to grayscale, rotating, inverting, adjusting brightness, and more.
 
 The initial image is :- 
 
